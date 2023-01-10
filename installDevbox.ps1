@@ -23,6 +23,7 @@ choco install visualstudio2022-workload-manageddesktop -y
 choco install visualstudio2022-workload-netweb -y
 choco install totalcommander -y
 choco install datagrip -y
+choco install docker-desktop -y
 
 #choco install Microsoft-Hyper-V-All -source windowsFeatures
 choco install IIS-WebServerRole -source windowsfeatures
