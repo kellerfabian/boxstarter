@@ -1,7 +1,8 @@
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 Set-WinUserLanguageList -LanguageList de-CH -Force
 TZutil /S "W. Europe Standard Time"
-
+choco install Boxstarter -y
+refreshenv
 Disable-UAC
 
 Import-Module Boxstarter.Chocolatey
@@ -32,6 +33,7 @@ choco install keepass-plugin-keeagent -y
 #choco install Microsoft-Hyper-V-All -source windowsFeatures
 choco install IIS-WebServerRole -source windowsfeatures
 Install-WindowsUpdate -AcceptEula
+refreshenv
 Disable-InternetExplorerESC
 Disable-GameBarTips
 Disable-BingSearch
