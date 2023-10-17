@@ -40,3 +40,4 @@ Disable-BingSearch
 
 
 Enable-UAC
+wsl --update
